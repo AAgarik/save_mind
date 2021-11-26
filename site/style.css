@@ -116,7 +116,7 @@ footer p{
 }
 
 /* plansheat */
-@media (max-width: 992px){ 
+@media (max-width: 1004px){ 
     header{
         height: 150px;
         padding: 28px;
@@ -127,10 +127,13 @@ footer p{
     .header-info{
         flex-direction: column;
     }
+    .courser-info{
+        background-image: url('images/laptop\ 2.png');
+    }
 }
 
 /* smartfon */
-@media (max-width: 767px){
+@media (max-width: 669px){
     header{
         height: 210px;
         padding: 20px;
@@ -145,6 +148,9 @@ footer p{
     }
     .contacts a{
         margin-bottom: 5px;
+    }
+    .courser-info{
+        background-image: url('images/laptop\ 3.png');
     }
 
  
