@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color:#383838;
+}
+
+
+.logo{
+    width: 150px;
+    height: 34px;
+}
+
+
+.container{
+    max-width: 1146px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    padding: 0 15px;
+}
+header{
+    background: #BEB7D8;
+    padding: 14px 0;
+}
+.header-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* .contacts{
+    margin-left: auto;
+} */
+.contacts a{
+     color: #383838;
+     text-decoration: none;
+     font-size: 12px;
+     margin-right: 25px;
+     display: inline-flex;
+     align-items: center;
+}
+.contacts a img{
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+
+.btn{
+    font-size: 12px;
+    background-color: #006ba7;
+    color: #ffffff;
+    border: none;
+    width: 160px;
+    border-radius: 20px;
+    /* height: 40px; */
+    padding: 13px 0 13px 0;
+}
+.header-btn{
+    width: 180px;
+}
+
+
+.courser-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    flex-direction: column;
+    background-image: url('images/laptop\ 1.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.courser-info h1{
+    font-size: 32px;
+    color:#006ba7;
+    margin: 0;
+}
+.courser-info p{
+    font-size: 18px;
+    margin-top: 15px;
+}
+.buttons{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.bg-lightgray{
+    background-color: #BEB7D8;
+}
+.education-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 70px 0 60px 0;
+}
+.card{
+    width:335px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background:#383838;
+    color:#ffffff;
+}
+
+footer p{
+    font-size: 12px;
+    margin: 11px;
+}
+
+/* plansheat */
+@media (max-width: 992px){ 
+    header{
+        height: 150px;
+        padding: 28px;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+    .header-info{
+        flex-direction: column;
+    }
+}
+
+/* smartfon */
+@media (max-width: 767px){
+    header{
+        height: 210px;
+        padding: 20px;
+    }
+    .header-btn{
+        margin-top: 12px;
+    }
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacts a{
+        margin-bottom: 5px;
+    }
+
+ 
+    .courser-info{
+        height: 350px;
+    }
+    .courser-info h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .courser-info p{
+        text-align: center;
+    }
+    .buttons{
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons button{
+        margin-bottom: 12px;
+
+    }
+
+
+    .education-info{
+        padding: 20px 0 20px 0;
+    }
+    footer p{
+        font-size: 10px;
+    }
+}
